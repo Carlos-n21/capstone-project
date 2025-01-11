@@ -130,3 +130,14 @@
     background-color: #eee;
     z-index: 0;
 }
+
+ /* Random Posts style */
+ .random-posts {
+    padding: 2rem 5%;
+}
+
+.random-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}

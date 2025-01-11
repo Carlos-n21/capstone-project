@@ -45,3 +45,11 @@
     text-underline-offset: 5px;
 }
 
+/* Logo style */
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #365bff;
+}
+
+

@@ -141,3 +141,34 @@
     grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
 }
+
+/* Footer style */
+footer {
+    background-color: #add8e6;
+    color: #000080;
+    padding: 1rem 5%;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+/* Social links position */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 0.5rem;
+}
+
+/* Social links style */
+.social-links a {
+    color: #000080;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+/* Social links hover style */
+.social-links a:hover {
+    color: #ff6b6b;
+    transform: translateY(-2px);
+}

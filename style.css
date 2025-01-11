@@ -97,3 +97,10 @@
     background-color: white;
 }
 
+/* Featured posts hovering  */
+.post-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    background-color: #f9f9f9;
+}
+

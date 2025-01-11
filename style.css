@@ -193,6 +193,22 @@
     margin-bottom: 10px;
 }
 
+/* Login form style */
+.login-form {
+    text-align: center;
+    margin-top: 20px;
+}
+.login-form form {
+    display: inline-block;
+    text-align: left;
+    width: 300px; /* Ensure the form has a fixed width */
+}
+.login-form input, .login-form button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
 /* Footer style */
 footer {
     background-color: #add8e6;

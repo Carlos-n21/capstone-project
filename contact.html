@@ -34,33 +34,28 @@
         </div>
     </section>
 
-    <!-- Section Title division to more artwork -->
+    <!-- Contact form -->
      <div class="about-title">
-        <h1>About</h1>
-        <p>This website was created to allow parents to share their children artwork with friends and family.<br>
-            Also to see and enjoy artworks made by their friends and family children, or users from around the world.</p>
+        <h1>Contact</h1>        
     </div>
 
-    <!-- Random Posts -->
-    <section class="random-artworks-container">
-        <div class="random-artworks">
-            <div class="post-card">
-                <img src="/api/placeholder/400/300" alt="Random Artwork 3">
-                <div class="post-content">
-                    <h3>My Pet Dragon</h3>
-                    <p>By Lucas, Age 7</p>
-                </div>
-            </div>
-            <div class="post-card">
-                <img src="/api/placeholder/400/300" alt="Random Artwork 4">
-                <div class="post-content">
-                    <h3>Magic Forest</h3>
-                    <p>By Lily, Age 5</p>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- Fields for the user to put info -->
+    <div class="contact-form">
+        <form action="/submit_form" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            
+            <button type="submit">Send</button>
+        </form>
+    </div>
 
+   
     <!-- Updated Footer -->
     <footer>
         <p>Follow us on social media</p>

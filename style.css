@@ -54,7 +54,7 @@
 
  /* Hero Section */
  .hero {
-    height: 60vh;
+    height: 40vh;
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
                 url('/api/placeholder/1200/800');
     background-size: cover;
@@ -179,6 +179,36 @@
     line-height: 1.6;
 }
 
+/* Contact form style */
+.contact-form {
+    text-align: center;
+}
+.contact-form form {
+    display: inline-block;
+    text-align: left;
+}
+.contact-form input, .contact-form textarea, .contact-form button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+/* Login form style */
+.login-form {
+    text-align: center;
+    margin-top: 20px;
+}
+.login-form form {
+    display: inline-block;
+    text-align: left;
+    width: 300px; /* Ensure the form has a fixed width */
+}
+.login-form input, .login-form button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
 /* Footer style */
 footer {
     background-color: #add8e6;
@@ -193,7 +223,7 @@ footer {
     display: flex;
     justify-content: center;
     gap: 2rem;
-    margin-top: 0.5rem;
+    margin-top: auto; /* Pushes the footer to the bottom */
 }
 
 /* Social links style */

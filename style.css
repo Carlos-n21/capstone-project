@@ -52,4 +52,21 @@
     color: #365bff;
 }
 
+ /* Hero Section */
+ .hero {
+    height: 60vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                url('/api/placeholder/1200/800');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
 
+.hero h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}

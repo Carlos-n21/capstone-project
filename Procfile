@@ -1,1 +1,1 @@
-web: gunicorn kids_art.wsgi
+web: gunicorn capstone-project.wsgi

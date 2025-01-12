@@ -34,6 +34,9 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['8000-carlosn21-capstoneproje-bmvuyucr8a5.ws.codeinstitute-ide.net']
 
+CSRF_TRUSTED_ORIGINS = [
+    'https://8000-carlosn21-capstoneproje-bmvuyucr8a5.ws.codeinstitute-ide.net'
+]
 
 # Application definition
 

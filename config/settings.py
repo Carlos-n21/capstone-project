@@ -32,7 +32,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-carlosn21-capstoneproje-bmvuyucr8a5.ws.codeinstitute-ide.net', '.herokuapp.com', 'https://kids-art-6bf76a5f18bc.herokuapp.com/', '8080-carlosn21-capstoneproje-bmvuyucr8a5.ws.codeinstitute-ide.net']
+ALLOWED_HOSTS = ['8000-carlosn21-capstoneproje-bmvuyucr8a5.ws.codeinstitute-ide.net', '.herokuapp.com', 'localhost', 'localhost:8000', 'https://kids-art-6bf76a5f18bc.herokuapp.com/', '8080-carlosn21-capstoneproje-bmvuyucr8a5.ws.codeinstitute-ide.net']
 
 CSRF_TRUSTED_ORIGINS = [
     'https://8000-carlosn21-capstoneproje-bmvuyucr8a5.ws.codeinstitute-ide.net'

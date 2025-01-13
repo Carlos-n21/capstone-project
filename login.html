@@ -20,9 +20,9 @@
         <div class="nav-menu">
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
-            <a href="login.html">Login</a>
+            <a href="login.html" class="active">Login</a>
             <a href="register.html">Register</a>
-            <a href="contact.html" class="active">Contact</a>
+            <a href="contact.html">Contact</a>
         </div>
     </nav>
 
@@ -34,28 +34,28 @@
         </div>
     </section>
 
-    <!-- Contact form -->
-     <div class="about-title">
-        <h1>Contact</h1>        
-    </div>
-
-    <!-- Fields for the user to put info -->
-    <div class="contact-form">
-        <form action="/submit_form" method="post">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
+    <!-- Login form -->
+    <div class="login-form">
+        <form id="loginForm" action="/submit_login" method="post">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required>
+            
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required>
             
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
             
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="4" required placeholder="Write your message"></textarea>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
             
-            <button type="submit">Send</button>
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required>
+            
+            <button type="submit">Register</button>
         </form>
     </div>
 
-   
     <!-- Updated Footer -->
     <footer>
         <p>Follow us on social media</p>
@@ -72,44 +72,19 @@
         </div>
     </footer>
 
-    <!-- Modal Structure -->
-    <div id="modal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <p>Your message was sent, we'll do our best to reply as fast as we can</p>
-        </div>
-    </div>
 
-
+    <!-- JavaScript code to check if the passwords match -->
     <script>
-        var modal = document.getElementById("modal");
-        
-        // Button that submits the form
-        var form = document.querySelector(".contact-form form");
-        
-        // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("close")[0];
-        
-        // When the user submits the form, open the modal 
-        form.onsubmit = function(event) {
-            event.preventDefault();
-            modal.style.display = "block";
-            form.reset(); // Reset the form fields
-        }
-        
-        // When the user clicks on <span> (x), close the modal
-        span.onclick = function() {
-            modal.style.display = "none";
-        }
-        
-        // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function(event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            var password = document.getElementById('password').value;
+            var confirmPassword = document.getElementById('confirmPassword').value;
+            
+            if (password !== confirmPassword) {
+                alert('Passwords do not match.');
+                event.preventDefault();
             }
-        }
+        });
     </script>
-
 
 
 </body>

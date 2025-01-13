@@ -72,6 +72,45 @@
         </div>
     </footer>
 
+    <!-- Modal Structure -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Your message was sent, we'll do our best to reply as fast as we can</p>
+        </div>
+    </div>
+
+
+    <script>
+    // Modal
+    var modal = document.getElementById("modal");
+    
+    // Button that submits the form
+    var form = document.querySelector(".contact-form form");
+    
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+    
+    // When the user submits the form, open the modal 
+    form.onsubmit = function(event) {
+        event.preventDefault();
+        modal.style.display = "block";
+    }
+    
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+    </script>
+
+
 
 </body>
 </html>
